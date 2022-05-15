@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="styleheet" href="./pages/index.css">
+        <title>Mesto</title>
+    </head>
+
+    <body class="body">
+
+        <header class="header">
+            <img class="header__logo" src="./images/header-logo.svg" alt="логотип">
+        </header>
+
+        <main>
+            <section class="profile">
+              <img class="profile__avatar" src="./images/profile-avatar.jpg" alt="аватар пользователя">
+              <h1 class="profile__name">Жак-Ив Кусто</h1>
+              <button class="profile__edit-button" type="button"></button>
+              <p class="profile__description">Исследователь океана</p>
+              <button class="profile__add-button" type="button"></button>
+            </section>
+
+            <section class="elements"></section>
+
+            <footer class="footer">
+                <p class="footer__copyrights">&copy; 2022 Mesto Russia</p>
+            </footer>
+
+        </main>
+
+        <div class="popup popup_type_profile-js"> <!--Редактирование профиля-->
+            <form class="popup__container" name="profileForm">
+                <button class="popup__close popup__close_profile-js" type="reset"></button>
+                <h2 class="popup__title">Редактировать профиль</h2>
+                <fieldset class="popup__form">
+                   <input class="popup__input popup__input_name-js" id="userName" type="text" name="userName" placeholder="Имя" minlength="2" maxlength="40" required>
+                   <span class="popup__input-error" id="userName-error"></span>
+                   <input class="popup__input popup__input_description-js" id="userDescription" type="text" name="userDescription" placeholder="О себе" minlength="2" maxlength="200" required>
+                   <span class="popup__input-error" id="userDescription-error"></span>
+                   <button class="popup__save-button" type="submit">Сохранить</button>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="popup popup_image-preview-js"> <!--Просмотр карточки-->
+            <div class="popup__card-body">
+              <figure class="popup__preview-figure">
+                <img class="popup__image" alt="#" src="#">
+                <figcaption class="popup__image-title"></figcaption>
+                <button class="popup__close popup__close_image-js" type="button"></button>
+              </figure>
+            </div>
+        </div>
+
+        <div class="popup popup_card-form-js">
+            <form class="popup__container popup__card-container" name="cardValues">
+                <button class="popup__close popup__close_card-js" type="button"></button>
+                <h3 class="popup__title">Новое место</h3>
+                <fieldset class="popup__form">
+                  <input class="popup__input popup__input_place-name-js" id="placeName" type="text" name="placeName" placeholder="Название" minlength="2" maxlength="30" required>
+                  <span class="popup__input-error" id="placeName-error"></span>
+                  <input class="popup__input popup__input_place-link-js" id="placeLink" type = "url" name="placeLink" placeholder="Ссылка на картинку" required>
+                  <span class="popup__input-error" id="placeLink-error"></span>
+                  <button class="popup__save-button" type="submit">Создать</button>
+                </fieldset>
+              </form>
+        </div>
+    </body>
+</html>
