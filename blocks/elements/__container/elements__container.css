@@ -1,0 +1,9 @@
+.elements__container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-areas: "title button";
+    gap: 0;
+    margin-left: 21px;
+    margin-right: 20px;
+    max-width: 282px;
+}

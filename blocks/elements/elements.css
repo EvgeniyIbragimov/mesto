@@ -1,0 +1,19 @@
+.elements {
+    margin: 0 19px 20px;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter", "Arial", sans-serif;
+}
+
+@media (min-width: 720px) {
+    .elements {
+        margin: 0 auto 60px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 282px);
+        gap: 0 17px;
+        justify-content: center;
+        max-width: 1140px;
+    }
+}
