@@ -1,0 +1,6 @@
+.popup__card-body {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+}

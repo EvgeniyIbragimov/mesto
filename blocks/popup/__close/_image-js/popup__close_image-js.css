@@ -1,0 +1,13 @@
+.popup__close_image-js {
+    position: absolute;
+    right: -6px;
+    top: -33px;
+    padding: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .popup__close_image-js {
+      right: -44px;
+      top: -42px;
+    }
+  }
