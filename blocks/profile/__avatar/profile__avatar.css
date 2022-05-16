@@ -1,17 +1,17 @@
 .profile__avatar {
+    width: 120px;
+    border-radius: 50%;
+    align-self: center;
     margin: 0 15px 22px 0;
     grid-area: avatar;
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 120px;
-    border-radius: 50%;
-    align-self: center;
-}
-
-@media (min-width: 768px) {
+  }
+  
+  @media (min-width: 768px) {
     .profile__avatar {
-        margin-bottom: 0;
+      margin-bottom: 0;
     }
-}
+  }

@@ -14,16 +14,16 @@
     cursor: pointer;
     justify-self: center;
     transition: opacity .3s ease-in-out;
-}
+  }
   
-@media (min-width: 768px) {
+  @media (min-width: 768px) {
     .profile__add-button {
       width: 150px;
       background-image: url(../../../images/profile-add-button-s.svg);
       justify-self: self-end;
     }
-}
+  }
   
-.profile__add-button:hover {
+  .profile__add-button:hover {
     opacity: 0.6;
-}
+  }

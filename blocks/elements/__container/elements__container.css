@@ -1,9 +1,10 @@
 .elements__container {
     display: grid;
+    /* grid-template-columns: 1fr 1fr; */
     grid-template-rows: 1fr;
-    grid-template-areas: "title button";
     gap: 0;
+    grid-template-areas: "title button";
+    max-width: 282px;
     margin-left: 21px;
     margin-right: 20px;
-    max-width: 282px;
-}
+  }

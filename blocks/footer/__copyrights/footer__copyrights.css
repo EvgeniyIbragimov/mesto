@@ -1,18 +1,18 @@
 .footer__copyrights {
-    display: flex;
-    color: #545454;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
+    color: #545454;
+    display: flex;
     margin-block-start: 0;
     margin-block-end: 36px;
-}
-
-@media (min-width: 768px) {
+  }
+  
+  @media (min-width: 768px) {
     .footer__copyrights {
-        font-size: 18px;
-        line-height: 22px;
-        max-width: 880px;
+      font-size: 18px;
+      line-height: 22px;
+      max-width: 880px;
     }
-}
+  }

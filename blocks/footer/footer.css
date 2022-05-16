@@ -1,12 +1,12 @@
 .footer {
-    margin: 0 19px 36px;
     font-family: "Inter", "Arial", sans-serif;
+    margin: 0 19px 36px;
     max-width: 318px;
-}
-
-@media (min-width: 768px) {
+  }
+  
+  @media (min-width: 768px) {
     .footer {
-        margin: 0 auto 60px;
-        max-width: 880px;
+      margin: 0 auto 60px;
+      max-width: 880px;
     }
-}
+  }

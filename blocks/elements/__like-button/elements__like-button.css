@@ -10,12 +10,12 @@
     background-color: #fff;
     cursor: pointer;
     transition: opacity 0.3s ease-in-out;
-}
-
-.elements__like-button:active {
-    background-image: url(../../../images/elements-like-button-active.svg);
-}
+  }
   
-.elements__like-button:hover {
+  .elements__like-button:active {
+    background-image: url(../../../images/elements-like-button-active.svg);
+  }
+  
+  .elements__like-button:hover {
     opacity: 0.5;
-}
+  }

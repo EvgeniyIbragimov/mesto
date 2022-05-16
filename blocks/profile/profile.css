@@ -13,14 +13,15 @@
     grid-template-areas:
       ". avatar ."
       ". name edit-button"
-      "description description description"
-      "add-button add-button add-button"; 
-}
-
-@media (min-width: 768px) {
+      "career career career"
+      "add-button add-button add-button";
+  }
+  
+  @media (min-width: 768px) {
     .profile {
       max-width: 880px;
       justify-items: flex-start;
+      /* margin: 40 auto 51px; */
       margin-top: 40px;
       margin-bottom: 51px;
       grid-template-columns: .6fr 1fr .4fr 1fr;
@@ -30,10 +31,11 @@
         "avatar name edit-button add-button"
         "avatar career career add-button";
     }
-}
+  }
   
-@media (max-width: 380px) {
-    .profile {
+    @media (max-width: 380px) {
+      .profile {
+        /* grid-template-columns: 1fr 2fr 1fr; */
         justify-content: center;
-    }
-}
+      }
+  }
