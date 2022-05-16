@@ -1,0 +1,29 @@
+.profile__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    margin-block-start: 0;
+    margin-bottom: 36px;
+    width: 282px;
+    grid-area: career;
+    justify-self: center;
+    align-self: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .profile__description {
+      justify-self: flex-start;
+      align-self: flex-start;
+      width: 336px;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 0;
+      margin-top: 16px;
+      text-align: start;
+    }
+  }
