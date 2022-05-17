@@ -19,12 +19,12 @@ class Card {
     
 
     _takeCardValues = () => {
-      popupImage.src = this._image; // беру значение src
+      popupImage.src = this._image; // значение src
       popupImage.alt = `${'На фото ' + this._title}`;
-      popupImageTitle.textContent = this._title; //беру значение имени картинки
+      popupImageTitle.textContent = this._title; // значение имени картинки
     }
 
-    _setEventListeners() {  // устанавливаю слушателей событий
+    _setEventListeners() {  // слушателей событий
       this._element.querySelector('.elements__like-button').addEventListener('click', () => {
         this._likeHandler();
       });

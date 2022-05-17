@@ -1,5 +1,3 @@
-// import { profileValue, cardValue, config, } from './index.js'
-
 class FormValidator {
     constructor(config, formElement){
       this._form = formElement;
@@ -34,7 +32,7 @@ class FormValidator {
         this.toggleButtonState(buttonElement, inputList, inputElement);
       });
   });
-    this.toggleButtonState(buttonElement, inputList);  // установить значение для кнопки(зависит от валидности формы)
+    this.toggleButtonState(buttonElement, inputList);  // установить значение для кнопки
   };
   
   _hasInvalidInput = () => {
@@ -42,7 +40,7 @@ class FormValidator {
       };
   
   toggleButtonState = (inputElement) => {
-    if (this._hasInvalidInput(this._inputList, inputElement)) { // если форма валидная то кнопка активна. Иначе - не активна
+    if (this._hasInvalidInput(this._inputList, inputElement)) { // если форма валидная то кнопка активна. Не валидная - не активна
       this._buttonElement.disabled = true; // делаю кнопку не активной
   } else if (!this._hasInvalidInput(this._inputList, inputElement)) {
       this._buttonElement.disabled = false; // делаю кнопку активной

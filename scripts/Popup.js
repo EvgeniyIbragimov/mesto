@@ -21,17 +21,15 @@ export class Popup {
         document.removeEventListener('keydown', this._escapeListener);
     }
 
-    // содержит логику закрытия попапа клавишей Esc
+    // закрытие попапа клавишей Esc
     _escapeListener(evt) {
         if (evt.key === 'Escape') {
-            // const popupIsOpened = document.querySelector('.popup_is-opened');
-            // this.close(popupIsOpened);
 
             this.close();
             }
     }
 
-    // добавляет слушатель клика иконке закрытия попапа
+    // слушатель клика иконка закрытия попапа
     setEventListeners() {
         popup.addEventListener('mousedown', (evt) => {
             if (evt.target === evt.currentTarget) {

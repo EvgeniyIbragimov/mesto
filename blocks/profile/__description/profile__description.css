@@ -1,4 +1,4 @@
-.profile__career {
+.profile__description {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -16,7 +16,7 @@
   }
   
   @media (min-width: 768px) {
-    .profile__career {
+    .profile__description {
       justify-self: flex-start;
       align-self: flex-start;
       width: 336px;

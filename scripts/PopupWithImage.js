@@ -1,5 +1,4 @@
 import { Popup } from './Popup.js';
-// import { popupImage } from '../src/index.js'
 
 
 // класс должен перезаписывать родительский метод open. 
@@ -15,8 +14,8 @@ export class PopupWithImage extends Popup {
     open() {
         super.open()
         
-        popupImage.src = this._image; //беру значение src
+        popupImage.src = this._image; // значение src
         popupImage.alt = `${'На фото '}${this._title}`;
-        popupImageTitle.textContent = this._title; //беру значение имени картинки
+        popupImageTitle.textContent = this._title; // значение имени картинки
     }
 }
