@@ -28,23 +28,23 @@
     </footer>
   </main>
 
-    <!-- popup редактирования профиля -->
-  <div class="popup popup_profile-form-js">
+    
+  <div class="popup popup_profile-form-js"> <!-- редактирование профиля -->
     <form class="popup__container" name="profileValues">
       <button class="popup__close popup__close_profile-js" type="reset"></button>
       <h3 class="popup__title">Редактировать профиль</h3>
       <fieldset class="popup__form">
         <input class="popup__input popup__input_name-js" id="userName" type="text" name="userName" placeholder="Имя" minlength="2" maxlength="40" required>
         <span class="popup__input-error" id="userName-error"></span>
-        <input class="popup__input popup__input_career-js" id="userCareer" type="text" name="userCareer" placeholder="О себе" minlength="2" maxlength="200" required>
-        <span class="popup__input-error" id="userCareer-error"></span>
+        <input class="popup__input popup__input_description-js" id="userDescription" type="text" name="userDescription" placeholder="О себе" minlength="2" maxlength="200" required>
+        <span class="popup__input-error" id="userDescription-error"></span>
         <button class="popup__save-button" type="submit">Сохранить</button>
       </fieldset>
     </form>
   </div>
 
-  <!-- popup добавления карточки -->
-  <div class="popup popup_card-form-js">
+  
+  <div class="popup popup_card-form-js"> <!-- добавление карточки -->
     <form class="popup__container popup__card-container" name="cardValues">
       <button class="popup__close popup__close_card-js" type="button"></button>
       <h3 class="popup__title">Новое место</h3>
@@ -58,8 +58,8 @@
     </form>
   </div>
 
-  <!-- popup превью карточки -->
-  <div class="popup popup_image-preview-js">
+  
+  <div class="popup popup_image-preview-js"> <!-- превью карточки -->
     <div class="popup__card-wrapper">
       <figure class="popup__preview-figure">
         <img class="popup__image" alt="#" src="#">
@@ -69,8 +69,8 @@
     </div>
   </div>
   
-  <!-- импорт карточек из массива -->
-  <template id="element" class="element">
+  
+  <template id="element" class="element"> <!-- импорт карточек из массива -->
     <div class="elements__item">
       <button class="elements__trash-button" type="button"></button>
       <img class="elements__image" alt="#">
