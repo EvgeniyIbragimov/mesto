@@ -21,7 +21,7 @@ export class Popup {
         document.removeEventListener('keydown', this._escapeListener);
     }
 
-    // закрытие попапа клавишей Esc
+    // закрытие popup клавишей Esc
     _escapeListener(evt) {
         if (evt.key === 'Escape') {
 
@@ -29,7 +29,7 @@ export class Popup {
             }
     }
 
-    // слушатель клика иконка закрытия попапа
+    // слушатель клика иконка закрытия popup
     setEventListeners() {
         popup.addEventListener('mousedown', (evt) => {
             if (evt.target === evt.currentTarget) {

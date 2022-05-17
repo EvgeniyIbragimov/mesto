@@ -13,7 +13,7 @@
     grid-template-areas:
       ". avatar ."
       ". name edit-button"
-      "career career career"
+      "description description description"
       "add-button add-button add-button";
   }
   
@@ -29,7 +29,7 @@
       gap: 0;
       grid-template-areas:
         "avatar name edit-button add-button"
-        "avatar career career add-button";
+        "avatar description description add-button";
     }
   }
   

@@ -10,7 +10,7 @@ class FormValidator {
       this._buttonElement = this._form.querySelector(this._submitButtonSelector);
     }
   
-  _checkInputValidity = (inputElement) => { // проверить валидность инпута
+  _checkInputValidity = (inputElement) => { // проверить валидность input
     if (inputElement.validity.valid) {
      this._hideInputError(inputElement); // если валидный, то прячем ошибку
   } else {
@@ -23,12 +23,12 @@ class FormValidator {
         evt.preventDefault();
     });
     
-  const inputList = Array.from(this._form.querySelectorAll(this._inputSelector));  // найти все инпуты внутри форм
+  const inputList = Array.from(this._form.querySelectorAll(this._inputSelector));  // найти все input внутри форм
   const buttonElement = this._form.querySelector(this._submitButtonSelector); // найти кнопку Submit
   
   inputList.forEach((inputElement) => { // найти все элементы формы
       inputElement.addEventListener('input', () => {
-        this._checkInputValidity(inputElement);  // проверить валидность инпута
+        this._checkInputValidity(inputElement);  // проверить валидность input
         this.toggleButtonState(buttonElement, inputList, inputElement);
       });
   });

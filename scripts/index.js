@@ -11,9 +11,9 @@ const editProfileButton = document.querySelector('.profile__edit-button'); // в
 const popupProfileForm = document.querySelector('.popup_profile-form-js'); // присвоил весь контейнер
 const closeEditFormButton = popupProfileForm.querySelector('.popup__close_profile-js'); // присвоил кнопке Закрыть
 const nameInput = popupProfileForm.querySelector('.popup__input_name-js'); // строка "Имя" в Инпуте Попап.
-const jobInput = popupProfileForm.querySelector('.popup__input_career-js'); // строка "О себе" в Инпуте Попап.
+const jobInput = popupProfileForm.querySelector('.popup__input_description-js'); // строка "О себе" в Инпуте Попап.
 const profileName = document.querySelector('.profile__name'); // строка "Имя" в ХТМЛ
-const profileCareer = document.querySelector('.profile__career'); // строка "О себе" в ХТМЛ
+const profileDescription = document.querySelector('.profile__description'); // строка "О себе" в ХТМЛ
 const submitForm = popupProfileForm.querySelector('.popup__container');
 const cardAddButton = document.querySelector('.profile__add-button');
 const popupCardForm = document.querySelector('.popup_card-form-js');
@@ -28,28 +28,28 @@ const popupImageTitle = popupCardPreview.querySelector('.popup__image-title')
 
 const initialCards = [
   {
-    name: 'Архыз',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
+    name: 'Коми',
+    link: 'http://www.nepsite.ru/upload/resize_cache/iblock/e95/800_600_1/e95bb43266655f74646074d22501e5c3.jpg'
   },
   {
-    name: 'Челябинская область',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
+    name: 'Санкт Петербург',
+    link: 'https://images.pexels.com/photos/6822960/pexels-photo-6822960.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
   },
   {
-    name: 'Иваново',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
+    name: 'Казань',
+    link: 'https://images.pexels.com/photos/7015701/pexels-photo-7015701.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
   },
   {
-    name: 'Камчатка',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
+    name: 'Крым',
+    link: 'https://images.pexels.com/photos/8707524/pexels-photo-8707524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
   },
   {
-    name: 'Холмогорский район',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
+    name: 'Карелия',
+    link: 'https://images.pexels.com/photos/8581427/pexels-photo-8581427.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
   },
   {
-    name: 'Байкал',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
+    name: 'Владивосток',
+    link: 'https://images.pexels.com/photos/10996000/pexels-photo-10996000.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
   }
 ];
 
@@ -79,22 +79,22 @@ profileValue.enableValidation();
 cardValue.enableValidation();
 
 initialCards.forEach((item) => {
-  // Создадим экземпляр карточки
+  // Создаст экземпляр карточки
   const card = new Card(item.name, item.link, '.element');
 
-  // Создаём карточку и возвращаем наружу
+  // Создаст карточку и возвращает наружу
   const cardElement = card.generateCard();
 
-  // Добавляем в DOM
+  // Добавляет в DOM
   elementContainer.prepend(cardElement);
 });
 
-function clearForm() {  // функция очистки инпутов попапа при закрытии
+function clearForm() {  // функция очистки input popup при закрытии
   placeName.value = '';
   placeLink.value = '';
 }
 
-// listener'ы открытия попапов
+// listener'ы открытия popup
 editProfileButton.addEventListener('click', () => {
   openPopup(popupProfileForm),
   profileValueToForm(),
@@ -107,7 +107,7 @@ cardAddButton.addEventListener('click', () => {
   cardValue.toggleButtonState()
 });
 
-// listener'ы закрытия попапов
+// listener'ы закрытия popup
 closeEditFormButton.addEventListener('click', () => closePopup(popupProfileForm));
 cardCloseButton.addEventListener('click', () => closePopup(popupCardForm));
 previewCloseButton.addEventListener('click', () => closePopup(popupCardPreview));
@@ -135,7 +135,7 @@ function submitFormHandler (evt) {
   closePopup(popupProfileForm);
 }
 
-// закрытие попапа кликом на оверлей
+// закрытие popup кликом на оверлей
 popup.forEach((popup) => {
   popup.addEventListener('mousedown', (evt) => {
     if (evt.target === evt.currentTarget) {
