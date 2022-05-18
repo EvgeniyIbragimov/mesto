@@ -21,7 +21,6 @@
     .profile {
       max-width: 880px;
       justify-items: flex-start;
-      /* margin: 40 auto 51px; */
       margin-top: 40px;
       margin-bottom: 51px;
       grid-template-columns: .6fr 1fr .4fr 1fr;
@@ -35,7 +34,6 @@
   
     @media (max-width: 380px) {
       .profile {
-        /* grid-template-columns: 1fr 2fr 1fr; */
         justify-content: center;
       }
   }
